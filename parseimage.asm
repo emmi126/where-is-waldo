@@ -25,7 +25,7 @@ main:	la $a0, imageBufferInfo
 	jal highlight
 	la $a0, errorBufferInfo	
 	jal processError
-	li $v0, 10		# exit
+	li $v0, 10
 	syscall
 	
 
