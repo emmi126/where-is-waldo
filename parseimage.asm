@@ -17,7 +17,7 @@ main:	la $a0, imageBufferInfo
 	la $a0, imageBufferInfo
 	la $a1, templateBufferInfo
 	la $a2, errorBufferInfo
-	jal matchTemplate
+	jal matchTemplateFast
 	la $a0, errorBufferInfo
 	jal findBest
 	la $a0, imageBufferInfo
